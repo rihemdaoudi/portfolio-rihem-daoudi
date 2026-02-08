@@ -2,24 +2,24 @@ import SectionTitle from './SectionTitle'
 
 export default function About() {
   return (
-    <section id="apropos" className="py-24 px-6 bg-white">
+    <section id="about" className="py-24 px-6 bg-white/60 dark:bg-darkCard/50">
       <div className="max-w-4xl mx-auto">
-        <SectionTitle title="À propos" subtitle="Qui suis-je ?" />
-        <div className="prose prose-lg text-charcoal/80 max-w-none">
+        <SectionTitle title="About Me" subtitle="Who am I?" />
+        <div className="prose prose-lg text-forest/90 dark:text-mint/90 max-w-none">
           <p className="leading-relaxed">
-            Diplômée de l&apos;<strong>École d&apos;Ingénieurs TEK-UP</strong> en Génie Logiciel et Systèmes d&apos;information 
-            (Mention Très Bien), je travaille actuellement comme <strong>Ingénieure Support Informatique</strong> chez 
-            Blue Fish Consulting à Tunis.
+            Graduated from <strong>TEK-UP School of Engineering</strong> in Software Engineering and Information Systems 
+            (Honors), I currently work as an <strong>IT Support Engineer</strong> at 
+            Blue Fish Consulting in Tunis.
           </p>
           <p className="leading-relaxed mt-4">
-            Mon expertise couvre le développement full-stack avec une prédilection pour les technologies 
-            modernes : Next.js, React, Node.js et TypeScript. J&apos;assure également la gestion d&apos;hébergements 
-            sur OVH Cloud, le déploiement et la maintenance de sites web.
+            My expertise covers full-stack development with a focus on modern technologies: 
+            Next.js, React, Node.js and TypeScript. I also manage hosting on OVH Cloud, 
+            deployment and maintenance of websites.
           </p>
           <p className="leading-relaxed mt-4">
-            Au-delà du code, je m&apos;investis dans la vie associative : Vice-Présidente à JCI El Médina, 
-            ancienne Trésorière IEEE TEK-UP, et ambassadrice TEDx. Sportive (boxe chinoise) et passionnée 
-            de design (Canva, Photoshop), j&apos;aime créer des expériences à la fois techniques et esthétiques.
+            Beyond code, I&apos;m passionate about community involvement: Vice President at JCI El Médina, 
+            former Treasurer at IEEE TEK-UP, and TEDx ambassador. A sports enthusiast (Chinese boxing) and 
+            design lover (Canva, Photoshop), I enjoy creating experiences that are both technical and beautiful. ✨
           </p>
         </div>
       </div>

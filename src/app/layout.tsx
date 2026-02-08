@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Outfit, Syne } from 'next/font/google'
 import './globals.css'
+import { ThemeProvider } from '@/context/ThemeContext'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
@@ -15,12 +16,12 @@ const syne = Syne({
 })
 
 export const metadata: Metadata = {
-  title: 'Rihem Daoudi | Ingénieure en Génie Logiciel',
-  description: 'Portfolio professionnel de Rihem Daoudi - Ingénieure Informatique spécialisée en Génie Logiciel. Découvrez mes projets web, mon expérience et mes compétences en Next.js, React et Node.js.',
-  keywords: ['Ingénieur Informatique', 'Génie Logiciel', 'Next.js', 'React', 'Node.js', 'Développement Web', 'Tunisie'],
+  title: 'Rihem Daoudi | Software Engineer',
+  description: 'Professional portfolio of Rihem Daoudi - Software Engineer specializing in Full-Stack Development. Discover my web projects, experience and skills in Next.js, React and Node.js.',
+  keywords: ['Software Engineer', 'Full-Stack', 'Next.js', 'React', 'Node.js', 'Web Development', 'Tunisia'],
   openGraph: {
-    title: 'Rihem Daoudi | Ingénieure en Génie Logiciel',
-    description: 'Portfolio professionnel - Développeuse full-stack passionnée par la création de solutions web innovantes.',
+    title: 'Rihem Daoudi | Software Engineer',
+    description: 'Professional portfolio - Full-stack developer passionate about creating innovative web solutions.',
   },
 }
 
@@ -30,11 +31,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr" className={`${outfit.variable} ${syne.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${outfit.variable} ${syne.variable}`}>
       <body className="font-sans antialiased">
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <ThemeProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -3,43 +3,62 @@
 @tailwind utilities;
 
 :root {
-  --charcoal: #1a1a1f;
-  --sandstone: #e8e4dd;
-  --accent: #c45c3e;
-  --slate: #2d2d35;
+  --mint: #d1fae5;
+  --lime: #a7f3d0;
+  --emerald: #34d399;
+  --forest: #059669;
+  --leaf: #22c55e;
+  --dark: #0f1419;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+/* Light mode */
 body {
-  background-color: var(--sandstone);
-  color: var(--charcoal);
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 50%, #a7f3d0 100%);
+  color: #064e3b;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Custom scrollbar */
+/* Dark mode */
+.dark body {
+  background: linear-gradient(135deg, #0f1419 0%, #1a2332 50%, #0d1117 100%);
+  color: #d1fae5;
+}
+
+/* Custom scrollbar - Light */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--sandstone);
+  background: #d1fae5;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1a2332;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--slate);
+  background: #22c55e;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--charcoal);
+  background: #16a34a;
 }
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, var(--accent) 0%, #8b3a2e 100%);
+  background: linear-gradient(135deg, #059669 0%, #22c55e 50%, #4ade80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Joyful gradient accent */
+.accent-gradient {
+  background: linear-gradient(135deg, #22c55e 0%, #4ade80 100%);
 }

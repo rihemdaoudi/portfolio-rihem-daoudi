@@ -7,12 +7,12 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-charcoal text-sandstone/90">
+    <footer className="bg-forest dark:bg-darkBg text-mint/90 border-t border-emerald/20">
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
-            <p className="font-display font-bold text-xl text-sandstone">Rihem Daoudi</p>
-            <p className="text-sm text-sandstone/70 mt-1">Ingénieure en Génie Logiciel</p>
+            <p className="font-display font-bold text-xl text-mint">Rihem Daoudi</p>
+            <p className="text-sm text-mint/70 mt-1">Software Engineer</p>
           </div>
 
           <div className="flex items-center gap-6">
@@ -22,7 +22,7 @@ export default function Footer() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sandstone/70 hover:text-accent transition-colors"
+                className="text-mint/70 hover:text-mint transition-colors"
                 aria-label={social.label}
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -33,8 +33,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-slate text-center text-sm text-sandstone/60">
-          <p>© {new Date().getFullYear()} Rihem Daoudi. Tous droits réservés.</p>
+        <div className="mt-8 pt-8 border-t border-emerald/20 text-center text-sm text-mint/60">
+          <p>© {new Date().getFullYear()} Rihem Daoudi. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -1,29 +1,26 @@
 # Portfolio - Rihem Daoudi
 
-## 🚀 Démarrage
+
+Professional portfolio of a Software Engineer. Built with Next.js, React, Three.js and Tailwind CSS. Features a joyful green theme, dark mode, 3D elements and skill icons.
+
+## 🚀 Getting Started
 
 ```bash
-# Installer les dépendances
+# Install dependencies
 npm install
 
-# Lancer le serveur de développement
+# Run development server
 npm run dev
 ```
 
-Ouvrir [http://localhost:3000](http://localhost:3000) dans le navigateur.
-
-## 📦 Build
-
-```bash
-npm run build
-npm start
-```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 
 
-## 🛠 Technologies
+## 🛠 Tech Stack
 
 - Next.js 14
 - React 18
+- Three.js + React Three Fiber
 - TypeScript
 - Tailwind CSS
