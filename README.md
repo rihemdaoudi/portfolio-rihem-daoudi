@@ -1,7 +1,5 @@
 # Portfolio - Rihem Daoudi
 
-Portfolio professionnel d'une ingénieure en Génie Logiciel. Développé avec Next.js, React et Tailwind CSS.
-
 ## 🚀 Démarrage
 
 ```bash
@@ -21,10 +19,7 @@ npm run build
 npm start
 ```
 
-## ✏️ Personnalisation
 
-- **Projets** : Modifier `src/data/projects.ts` pour ajouter ou modifier les projets
-- **URLs manquantes** : Les sites Tunistoric et Dehliz El Zliz ont des URLs placeholder (`#`) à remplacer par les vrais liens une fois disponibles
 
 ## 🛠 Technologies
 
