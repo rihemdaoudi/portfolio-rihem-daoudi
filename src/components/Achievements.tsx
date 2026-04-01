@@ -13,10 +13,13 @@ const achievements = [
     description: null,
     items: [
       'Vice President of Programs & External Relations — JCI El Médina (2025)',
+      'Media Advisor — JCI El Médina (2026)',
       'Vice President of Training & Development — JCI El Médina (2024)',
       'Treasurer — IEEE TEK-UP (2024)',
       'Ambassador — TSYP11 (2023)',
       'Volunteer — TEDx Street Pasha (2023)',
+      'Member — AEK · Association de l\'Environnement de Kélibia',
+      'Observer Member — JCI El Médina (2021)',
     ],
   },
   {

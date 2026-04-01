@@ -19,9 +19,14 @@ export const metadata: Metadata = {
   title: 'Rihem Daoudi | Software Engineer',
   description: 'Professional portfolio of Rihem Daoudi - Software Engineer specializing in Full-Stack Development. Discover my web projects, experience and skills in Next.js, React and Node.js.',
   keywords: ['Software Engineer', 'Full-Stack', 'Next.js', 'React', 'Node.js', 'Web Development', 'Tunisia'],
+  icons: {
+    icon: '/rihemdaoudi.jpeg',
+    apple: '/rihemdaoudi.jpeg',
+  },
   openGraph: {
     title: 'Rihem Daoudi | Software Engineer',
     description: 'Professional portfolio - Full-stack developer passionate about creating innovative web solutions.',
+    images: [{ url: '/rihemdaoudi.jpeg' }],
   },
 }
 

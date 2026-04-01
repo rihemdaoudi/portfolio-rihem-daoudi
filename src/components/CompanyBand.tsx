@@ -82,8 +82,8 @@ export default function CompanyBand() {
   return (
     <section className="py-12 overflow-hidden">
       {/* Label */}
-      <p className="text-center text-[11px] font-black text-forest/30 dark:text-white/25 uppercase tracking-[0.3em] mb-8">
-        Companies &amp; organisations I&apos;ve worked with
+      <p className="text-center text-sm font-black text-forest/40 dark:text-white/30 uppercase tracking-[0.25em] mb-8">
+        Companies &amp; Organisations I&apos;ve Worked With
       </p>
 
       {/* Masked scrolling track */}

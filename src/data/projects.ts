@@ -11,8 +11,8 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'Ultra Mirage Desert Marathon',
-    description: 'Official website for the ultra marathon in the Sahara desert in Tozeur. Complete platform with race registration (100km, 50km, 25km), shop, gallery and past editions information.',
+    title: 'Ultra Mirage El Djerid Desert Trail',
+    description: 'Official website for the ultra trail in the Sahara desert in Tozeur. Complete platform with race registration (100km, 50km, 25km), gallery past editions information and paiement integration.',
     url: 'https://www.ultramirage.tn',
     status: 'deployed',
     technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'MongoDB'],
@@ -32,7 +32,7 @@ export const projects: Project[] = [
     description: 'Platform showcasing the art of Zliz (traditional Tunisian ceramics) and Tunisian craft heritage.',
     url: 'https://www.dehlizelzliz.darbengacem.com/',
     status: 'deployed',
-    technologies: ['Next.js', 'React', 'Node.js'],
+    technologies: ['Next.js', 'React', 'Node.js', 'MongoDB'],
     role: 'Development and deployment',
   },
   {
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     description: 'Educational non-profit website. Contribution to feature development and continuous platform improvements.',
     url: 'https://www.mdinti.org/',
     status: 'collaboration',
-    technologies: ['Next.js', 'React', 'Node.js'],
+    technologies: ['Next.js', 'React', 'Node.js', 'MongoDB'],
     role: 'Additional feature development',
   },
   // {

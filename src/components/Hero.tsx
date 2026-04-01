@@ -63,12 +63,23 @@ export default function Hero() {
             <TypeWriter />
           </p>
 
+          {/* Current role badge */}
+          <div
+            className="mt-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/8 border border-white/12 animate-slide-up opacity-0"
+            style={{ animationDelay: '0.42s' }}
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+            <span className="text-xs font-semibold text-white/65">
+              Fullstack Software Engineer · <span className="text-lime">Blue Fish Consulting</span>
+            </span>
+          </div>
+
           {/* Description */}
           <p
             className="mt-5 text-base sm:text-lg text-white/55 max-w-lg mx-auto lg:mx-0 leading-relaxed animate-slide-up opacity-0"
             style={{ animationDelay: '0.5s' }}
           >
-            I design and ship polished web applications — from architecture to deployment.
+            I turn complex ideas into elegant digital products — from architecture to deployment.
             Powered by <span className="text-lime font-semibold">Next.js</span>,{' '}
             <span className="text-lime font-semibold">React</span> &amp;{' '}
             <span className="text-lime font-semibold">Node.js</span>.
@@ -93,25 +104,6 @@ export default function Hero() {
             </Link>
           </div>
 
-          {/* Stats */}
-          <div
-            className="mt-12 flex items-center justify-center lg:justify-start gap-8 animate-fade-in opacity-0"
-            style={{ animationDelay: '0.85s' }}
-          >
-            {[
-              { value: '5+', label: 'Live Projects' },
-              { value: '3+', label: 'Years Coding' },
-              { value: 'Honours', label: 'Degree' },
-            ].map((s, i, arr) => (
-              <div key={s.label} className="flex items-center gap-8">
-                <div className="text-center lg:text-left">
-                  <p className="font-display font-black text-2xl text-white">{s.value}</p>
-                  <p className="text-xs font-medium text-white/40 mt-0.5">{s.label}</p>
-                </div>
-                {i < arr.length - 1 && <div className="w-px h-8 bg-white/10 shrink-0" />}
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* ── Right: illustration ── */}

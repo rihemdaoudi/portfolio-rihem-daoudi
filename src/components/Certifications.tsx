@@ -2,6 +2,12 @@ import SectionTitle from './SectionTitle'
 
 const certifications = [
   {
+    title: 'Hashgraph Developer Course',
+    issuer: 'Hedera',
+    year: '2025',
+    icon: '🔗',
+  },
+  {
     title: 'Introduction to Generative AI',
     issuer: 'Google Cloud',
     year: '2024',
@@ -26,7 +32,7 @@ export default function Certifications() {
     <section id="certifications" className="py-24 px-6 section-alt">
       <div className="max-w-4xl mx-auto">
         <SectionTitle title="Certifications" subtitle="Recognised training" />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {certifications.map((cert) => (
             <div
               key={cert.title}

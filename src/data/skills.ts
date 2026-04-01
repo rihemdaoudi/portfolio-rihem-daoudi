@@ -2,8 +2,9 @@
 export const skillIconMap: Record<string, string> = {
   JavaScript: 'javascript',
   TypeScript: 'ts',
-  Python: 'python',
-  'C#': 'csharp',
+  //Python: 'python',
+  'C#': 'cs',
+  Docker: 'docker',
   Java: 'java',
   'Next.js': 'nextjs',
   React: 'react',
@@ -12,17 +13,17 @@ export const skillIconMap: Record<string, string> = {
   'ASP.NET Core MVC': 'dotnet',
   'SQL Server': 'mysql',
   MongoDB: 'mongodb',
-  AWS: 'amazonaws',
+  //AWS: 'amazonaws',
   'OVH Cloud': 'gcp',
-  Jenkins: 'jenkins',
-  GitHub: 'github',
+  //Jenkins: 'jenkins',
+  //GitHub: 'github',
   Postman: 'postman',
 }
 
 export const skillCategories = [
   {
     title: 'Languages',
-    skills: ['JavaScript', 'TypeScript', 'Python', 'C#', 'Java'],
+    skills: ['JavaScript', 'TypeScript', 'C#'],
   },
   {
     title: 'Frameworks & Technologies',
@@ -34,7 +35,7 @@ export const skillCategories = [
   },
   {
     title: 'Cloud & DevOps',
-    skills: ['AWS', 'OVH Cloud', 'Jenkins', 'GitHub', 'Postman'],
+    skills: ['OVH Cloud', 'Docker', 'Postman'],
   },
   {
     title: 'Methodologies',

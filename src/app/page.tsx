@@ -3,8 +3,10 @@ import CompanyBand from '@/components/CompanyBand'
 import About from '@/components/About'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
+import Education from '@/components/Education'
 import Certifications from '@/components/Certifications'
 import Achievements from '@/components/Achievements'
+import Languages from '@/components/Languages'
 
 export default function Home() {
   return (
@@ -14,8 +16,10 @@ export default function Home() {
       <About />
       <Skills />
       <Experience />
+      <Education />
       <Certifications />
       <Achievements />
+      <Languages />
     </>
   )
 }
