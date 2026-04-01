@@ -6,16 +6,18 @@ export interface Project {
   technologies: string[]
   role: string
   image?: string
+  featured?: boolean
 }
 
 export const projects: Project[] = [
   {
     title: 'Ultra Mirage Desert Marathon',
     description: 'Official website for the ultra marathon in the Sahara desert in Tozeur. Complete platform with race registration (100km, 50km, 25km), shop, gallery and past editions information.',
-    url: 'https://ultra-mirage.vercel.app/',
-    status: 'in-progress',
-    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+    url: 'https://www.ultramirage.tn',
+    status: 'deployed',
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'MongoDB'],
     role: 'Full-stack development',
+    featured: true,
   },
   {
     title: 'Tunistoric',
@@ -41,12 +43,12 @@ export const projects: Project[] = [
     technologies: ['Next.js', 'React', 'Node.js'],
     role: 'Additional feature development',
   },
-  {
-    title: 'TEDxPasha Street',
-    description: 'Official website for the TEDx Pasha Street event held in the Medina of Tunis. Inspiring event around the theme "Brand Legacy".',
-    url: 'https://www.tedxpashastreet.com',
-    status: 'collaboration',
-    technologies: ['Next.js', 'React', 'Node.js'],
-    role: 'Feature development and integrations',
-  },
+  // {
+  //   title: 'TEDxPasha Street',
+  //   description: 'Official website for the TEDx Pasha Street event held in the Medina of Tunis. Inspiring event around the theme "Brand Legacy".',
+  //   url: 'https://www.tedxpashastreet.com',
+  //   status: 'collaboration',
+  //   technologies: ['Next.js', 'React', 'Node.js'],
+  //   role: 'Feature development and integrations',
+  // },
 ]

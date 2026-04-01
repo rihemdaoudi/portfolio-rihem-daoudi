@@ -12,36 +12,32 @@ export default function SkillIcon({ skill }: SkillIconProps) {
   const [hasError, setHasError] = useState(false)
   const iconCode = skillIconMap[skill]
 
-  if (!iconCode || hasError) {
-    return (
-      <div className="flex flex-col items-center gap-1.5 p-3 rounded-xl bg-white/80 dark:bg-darkCard/80 hover:bg-emerald/10 dark:hover:bg-darkGreen/20 transition-colors">
-        <div className="w-10 h-10 rounded-lg bg-emerald/20 dark:bg-darkGreen/20 flex items-center justify-center">
-          <span className="text-sm font-bold text-forest dark:text-darkMint">
-            {skill.slice(0, 2)}
-          </span>
-        </div>
-        <span className="text-xs font-medium text-forest/80 dark:text-mint/80 truncate max-w-[80px] text-center">
-          {skill}
-        </span>
+  const fallback = (
+    <div className="flex flex-col items-center gap-1.5 p-2.5 rounded-xl hover:bg-leaf/8 dark:hover:bg-leaf/10 transition-colors cursor-default">
+      <div className="w-10 h-10 rounded-lg bg-leaf/12 dark:bg-leaf/15 flex items-center justify-center">
+        <span className="text-xs font-black text-leaf dark:text-lime">{skill.slice(0, 2)}</span>
       </div>
-    )
-  }
+      <span className="text-[10px] font-semibold text-forest/60 dark:text-slate-500 truncate max-w-[72px] text-center leading-tight">
+        {skill}
+      </span>
+    </div>
+  )
 
-  const iconUrl = `https://skillicons.dev/icons?i=${iconCode}`
+  if (!iconCode || hasError) return fallback
 
   return (
-    <div className="flex flex-col items-center gap-1.5 p-3 rounded-xl bg-white/80 dark:bg-darkCard/80 hover:bg-emerald/10 dark:hover:bg-darkGreen/20 transition-colors group">
+    <div className="flex flex-col items-center gap-1.5 p-2.5 rounded-xl hover:bg-leaf/8 dark:hover:bg-leaf/10 transition-colors cursor-default group">
       <div className="relative w-10 h-10">
         <Image
-          src={iconUrl}
+          src={`https://skillicons.dev/icons?i=${iconCode}`}
           alt={skill}
           fill
-          className="object-contain group-hover:scale-110 transition-transform"
+          className="object-contain group-hover:scale-110 transition-transform duration-200"
           unoptimized
           onError={() => setHasError(true)}
         />
       </div>
-      <span className="text-xs font-medium text-forest/80 dark:text-mint/80 truncate max-w-[80px] text-center">
+      <span className="text-[10px] font-semibold text-forest/60 dark:text-slate-500 truncate max-w-[72px] text-center leading-tight">
         {skill}
       </span>
     </div>

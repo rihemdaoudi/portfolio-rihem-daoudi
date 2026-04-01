@@ -5,16 +5,12 @@ export const skillIconMap: Record<string, string> = {
   Python: 'python',
   'C#': 'csharp',
   Java: 'java',
-  PHP: 'php',
   'Next.js': 'nextjs',
   React: 'react',
   'Node.js': 'nodejs',
   Angular: 'angular',
   'ASP.NET Core MVC': 'dotnet',
-  'Spring Boot': 'spring',
   'SQL Server': 'mysql',
-  MySQL: 'mysql',
-  PostgreSQL: 'postgres',
   MongoDB: 'mongodb',
   AWS: 'amazonaws',
   'OVH Cloud': 'gcp',
@@ -26,15 +22,15 @@ export const skillIconMap: Record<string, string> = {
 export const skillCategories = [
   {
     title: 'Languages',
-    skills: ['JavaScript', 'TypeScript', 'Python', 'C#', 'Java', 'PHP'],
+    skills: ['JavaScript', 'TypeScript', 'Python', 'C#', 'Java'],
   },
   {
     title: 'Frameworks & Technologies',
-    skills: ['Next.js', 'React', 'Node.js', 'Angular', 'ASP.NET Core MVC', 'Spring Boot'],
+    skills: ['Next.js', 'React', 'Node.js', 'Angular', 'ASP.NET Core MVC'],
   },
   {
     title: 'Databases',
-    skills: ['SQL Server', 'MySQL', 'PostgreSQL', 'MongoDB'],
+    skills: ['MongoDB', 'SQL Server'],
   },
   {
     title: 'Cloud & DevOps',

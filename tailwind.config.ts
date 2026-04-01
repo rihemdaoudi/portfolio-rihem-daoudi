@@ -14,24 +14,31 @@ const config: Config = {
         display: ['var(--font-syne)', 'system-ui', 'sans-serif'],
       },
       colors: {
-        // Light mode - joyful green theme
-        mint: '#d1fae5',
-        lime: '#a7f3d0',
-        emerald: '#34d399',
-        forest: '#059669',
-        sage: '#10b981',
-        leaf: '#22c55e',
-        // Dark mode
-        darkBg: '#0f1419',
-        darkCard: '#1a2332',
-        darkGreen: '#22c55e',
-        darkMint: '#86efac',
+        // ── Main palette ─────────────────────────
+        mint: '#f5f3ff',        // very pale violet bg
+        lime: '#c4b5fd',        // violet-300
+        emerald: '#0ea5e9',     // sky-500 — cool secondary
+        forest: '#1a0f3a',      // deep purple-black text
+        sage: '#6d28d9',        // violet-800
+        leaf: '#7c3aed',        // violet-700 — primary CTA
+        accent: '#ec4899',      // pink-500
+        warm: '#f59e0b',        // amber-500
+        // ── Dark mode ─────────────────────────────
+        darkBg: '#080615',
+        darkCard: '#130f2a',
+        darkGreen: '#a78bfa',   // violet-400 for dark accents
+        darkMint: '#f0e8ff',    // light lavender text
       },
       animation: {
-        'fade-in': 'fadeIn 0.6s ease-out forwards',
-        'slide-up': 'slideUp 0.6s ease-out forwards',
-        'float': 'float 6s ease-in-out infinite',
-        'bounce-soft': 'bounceSoft 2s ease-in-out infinite',
+        'fade-in': 'fadeIn 0.7s ease-out forwards',
+        'slide-up': 'slideUp 0.7s ease-out forwards',
+        'float': 'float 7s ease-in-out infinite',
+        'orb': 'orbPulse 8s ease-in-out infinite',
+        'orb-slow': 'orbPulse 12s ease-in-out infinite 1.5s',
+        'spin-slow': 'spin 20s linear infinite',
+        'shimmer': 'shimmer 2s ease-in-out infinite',
+        'marquee': 'marquee 28s linear infinite',
+        'marquee2': 'marquee2 28s linear infinite',
       },
       keyframes: {
         fadeIn: {
@@ -39,28 +46,44 @@ const config: Config = {
           '100%': { opacity: '1' },
         },
         slideUp: {
-          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '0%': { opacity: '0', transform: 'translateY(28px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         float: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-10px)' },
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-14px)' },
         },
-        bounceSoft: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-5px)' },
+        orbPulse: {
+          '0%, 100%': { transform: 'scale(1)', opacity: '0.5' },
+          '50%': { transform: 'scale(1.2)', opacity: '0.8' },
+        },
+        shimmer: {
+          '0%': { opacity: '0.5' },
+          '50%': { opacity: '1' },
+          '100%': { opacity: '0.5' },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        marquee2: {
+          '0%': { transform: 'translateX(50%)' },
+          '100%': { transform: 'translateX(0%)' },
         },
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-joy': 'linear-gradient(135deg, #d1fae5 0%, #a7f3d0 50%, #86efac 100%)',
-        'gradient-dark': 'linear-gradient(135deg, #0f1419 0%, #1a2332 100%)',
+        'gradient-accent': 'linear-gradient(135deg, #7c3aed, #ec4899)',
+        'gradient-cool': 'linear-gradient(135deg, #7c3aed, #0ea5e9)',
+        'gradient-warm': 'linear-gradient(135deg, #ec4899, #f59e0b)',
       },
       boxShadow: {
-        'glow': '0 0 40px rgba(34, 197, 94, 0.2)',
-        'glow-dark': '0 0 40px rgba(34, 197, 94, 0.1)',
-        'card': '0 4px 20px rgba(34, 197, 94, 0.08)',
-        'card-dark': '0 4px 20px rgba(0, 0, 0, 0.3)',
+        'glow': '0 0 0 1px rgba(124,58,237,0.2), 0 8px 32px rgba(124,58,237,0.25)',
+        'glow-pink': '0 0 0 1px rgba(236,72,153,0.2), 0 8px 32px rgba(236,72,153,0.2)',
+        'glow-dark': '0 0 0 1px rgba(167,139,250,0.2), 0 8px 32px rgba(124,58,237,0.3)',
+        'card': '0 1px 3px rgba(26,15,58,0.06), 0 4px 20px rgba(124,58,237,0.07)',
+        'card-dark': '0 1px 3px rgba(0,0,0,0.4), 0 4px 24px rgba(0,0,0,0.3)',
+        'btn': '0 4px 20px rgba(124,58,237,0.4)',
       },
     },
   },

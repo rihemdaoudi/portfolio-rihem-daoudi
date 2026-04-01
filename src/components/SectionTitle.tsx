@@ -5,15 +5,16 @@ interface SectionTitleProps {
 
 export default function SectionTitle({ title, subtitle }: SectionTitleProps) {
   return (
-    <div className="mb-12">
+    <div className="mb-14">
       {subtitle && (
-        <p className="text-leaf dark:text-darkMint font-medium text-sm uppercase tracking-widest mb-2">
+        <p className="text-xs font-black text-accent uppercase tracking-[0.22em] mb-3">
           {subtitle}
         </p>
       )}
-      <h2 className="font-display font-bold text-3xl sm:text-4xl text-forest dark:text-darkMint">
+      <h2 className="font-display font-black text-3xl sm:text-4xl text-forest dark:text-white leading-tight">
         {title}
       </h2>
+      <div className="accent-line mt-4" />
     </div>
   )
 }
